@@ -1,0 +1,299 @@
+Common Core of Data, Local Education Agency Universe Dropout File: School Year 1998-1999
+
+FILE NAME = dr981b.dat, 1998-1999
+
+NVAR = 298
+
+NOBS = 11325
+
+LRECL = 1669
+
+(*) Fields have one explicit decimal place.
+
+(+) Fields represent sub-fields of the fields immediately preceding them.
+
+The file contains data for the school year 1998-1999 sorted by the NCES assigned local education agency identification code (LEAID).
+
+					
+LEAID		0001	0007	7	AN	NCES Local Education Agency ID.  The first two positions of this field are also the FIPS state code.
+ +FIPST		0001	0002	2	AN	Federal Information Processing Standards, FIPS state code.
+YEAR		0008	0011	4	AN	Beginning of the school year (School year 1998-99 will be represented in this field as 1998).
+STID		0012	0025	14	AN	State's own ID for the education agency.
+NAME		0026	0085	60	AN	Name of the education agency.
+PHONE		0086	0095	10	AN	Telephone number of education agency.  NOTE: Position # 0086-0088 is the area code, and position # 0089-0095 is the exchange and number.
+MSTREE		0096	0125	30	AN	Mailing address of the agency -- may be a street address, a Post Office box number, or, if there is no address beyond CITY, STATE, and ZIP, the character "N".
+MCITY		0126	0155	30	AN	Name of the mailing address city.
+MSTATE		0156	0157	2	AN	Two-letter U.S. Postal Service abbreviation for the state where the mailing address is located.
+MZIP		0158	0162	5	AN	Five-digit U.S. Postal Service zip code for the mailing address.
+MZIP4		0163	0166	4	AN	Four-digit +4 code, if assigned; if none, field is blank.
+LOCALE		0167	0167	1	AN	NCES code for location of the agency relative to populous areas:
+SUBMIT		0168	0168	1	AN	Flag indicating the CCD submission file in which the directory data were reported.
+GSLO		0169	0170	2	AN	Agency low grade offered.  If grade span data were not reported, this variable was calculated from the low grade spans of the associated schools on the CCD School Universe file.  The following codes are used: PK = Prekindergarten KG = Kindergarten 01 -- 12 = First through Twelfth grade UG = Ungraded (UG occurs only in isolation from other GSLO codes)00 = no students reported (00 occurs only in isolation from other GSLO codes).
+GSHI		0171	0172	2	AN	Agency high grade offered.  If grade span data were not reported, this variable was calculated from the high grade spans of the associated schools on the CCD School Universe file. GSLO and GSHI comprise the Grade Span of the agency.  The following codes are used: PK = Prekindergarten KG = Kindergarten 01 -- 12 = First through Twelfth grade UG = Ungraded (UG occurs only in isolation from other GSHI codes)00 = no students reported (00 occurs only in isolation from other GSHI codes).
+TOTD07		0173	0178	6	N	Count of Grade 7 dropouts - Total.
+AMD07M		0179	0184	6	N	Count of Grade 7 dropouts - American Indian/Alaskan Native - male.
+AMD07F		0185	0190	6	N	Count of Grade 7 dropouts - American Indian/Alaskan Native - female.
+AMD07U		0191	0196	6	N	Count of Grade 7 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD07M		0197	0202	6	N	Count of Grade 7 dropouts - Asian/Pacific Islander - male.
+ASD07F		0203	0208	6	N	Count of Grade 7 dropouts - Asian/Pacific Islander - female.
+ASD07U		0209	0214	6	N	Count of Grade 7 dropouts - Asian/Pacific Islander - gender unknown.
+HID07M		0215	0220	6	N	Count of Grade 7 dropouts - Hispanic - male.
+HID07F		0221	0226	6	N	Count of Grade 7 dropouts - Hispanic - female.
+HID07U		0227	0232	6	N	Count of Grade 7 dropouts - Hispanic - gender unknown.
+BLD07M		0233	0238	6	N	Count of Grade 7 dropouts - Black, not Hispanic - male.
+BLD07F		0239	0244	6	N	Count of Grade 7 dropouts - Black, not Hispanic - female.
+BLD07U		0245	0250	6	N	Count of Grade 7 dropouts - Black, not Hispanic - gender unknown.
+WHD07M		0251	0256	6	N	Count of Grade 7 dropouts - White, not Hispanic - male.
+WHD07F		0257	0262	6	N	Count of Grade 7 dropouts - White, not Hispanic - female.
+WHD07U		0263	0268	6	N	Count of Grade 7 dropouts - White, not Hispanic - gender unknown.
+TOTD08		0269	0274	6	N	Count of Grade 8 dropouts - Total.
+AMD08M		0275	0280	6	N	Count of Grade 8 dropouts - American Indian/Alaskan Native - male.
+AMD08F		0281	0286	6	N	Count of Grade 8 dropouts - American Indian/Alaskan Native - female.
+AMD08U		0287	0292	6	N	Count of Grade 8 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD08M		0293	0298	6	N	Count of Grade 8 dropouts - Asian/Pacific Islander - male.
+ASD08F		0299	0304	6	N	Count of Grade 8 dropouts - Asian/Pacific Islander - female.
+ASD08U		0305	0310	6	N	Count of Grade 8 dropouts - Asian/Pacific Islander- gender unknown.
+HID08M		0311	0316	6	N	Count of Grade 8 dropouts - Hispanic - male.
+HID08F		0317	0322	6	N	Count of Grade 8 dropouts - Hispanic - female.
+HID08U		0323	0328	6	N	Count of Grade 8 dropouts - Hispanic - gender unknown.
+BLD08M		0329	0334	6	N	Count of Grade 8 dropouts - Black, not Hispanic - male.
+BLD08F		0335	0340	6	N	Count of Grade 8 dropouts - Black, not Hispanic - female.
+BLD08U		0341	0346	6	N	Count of Grade 8 dropouts - Black, not Hispanic - gender unknown.
+WHD08M		0347	0352	6	N	Count of Grade 8 dropouts - White, not Hispanic - male.
+WHD08F		0353	0358	6	N	Count of Grade 8 dropouts - White, not Hispanic - female.
+WHD08U		0359	0364	6	N	Count of Grade 8 dropouts - White, not Hispanic - gender unknown.
+TOTD09		0365	0370	6	N	Count of Grade 9 dropouts - Total.
+AMD09M		0371	0376	6	N	Count of Grade 9 dropouts - American Indian/Alaskan Native - male.
+AMD09F		0377	0382	6	N	Count of Grade 9 dropouts - American Indian/Alaskan Native - female.
+AMD09U		0383	0388	6	N	Count of Grade 9 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD09M		0389	0394	6	N	Count of Grade 9 dropouts - Asian/Pacific Islander - male.
+ASD09F		0395	0400	6	N	Count of Grade 9 dropouts - Asian/Pacific Islander - female.
+ASD09U		0401	0406	6	N	Count of Grade 9 dropouts - Asian/Pacific Islander - gender unknown.
+HID09M		0407	0412	6	N	Count of Grade 9 dropouts - Hispanic - male.
+HID09F		0413	0418	6	N	Count of Grade 9 dropouts - Hispanic - female.
+HID09U		0419	0424	6	N	Count of Grade 9 dropouts - Hispanic - gender unknown.
+BLD09M		0425	0430	6	N	Count of Grade 9 dropouts - Black, not Hispanic - male.
+BLD09F		0431	0436	6	N	Count of Grade 9 dropouts - Black, not Hispanic - female.
+BLD09U		0437	0442	6	N	Count of Grade 9 dropouts - Black, not Hispanic - gender unknown.
+WHD09M		0443	0448	6	N	Count of Grade 9 dropouts - White, not Hispanic - male.
+WHD09F		0449	0454	6	N	Count of Grade 9 dropouts - White, not Hispanic - female.
+WHD09U		0455	0460	6	N	Count of Grade 9 dropouts - White, not Hispanic - gender unknown.
+TOTD10		0461	0466	6	N	Count of Grade 10 dropouts - Total.
+AMD10M		0467	0472	6	N	Count of Grade 10 dropouts - American Indian/Alaskan Native - male.
+AMD10F		0473	0478	6	N	Count of Grade 10 dropouts - American Indian/Alaskan Native - female.
+AMD10U		0479	0484	6	N	Count of Grade 10 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD10M		0485	0490	6	N	Count of Grade 10 dropouts - Asian/Pacific Islander - male.
+ASD10F		0491	0496	6	N	Count of Grade 10 dropouts - Asian/Pacific Islander - female.
+ASD10U		0497	0502	6	N	Count of Grade 10 dropouts - Asian/Pacific Islander - gender unknown.
+HID10M		0503	0508	6	N	Count of Grade 10 dropouts - Hispanic - male.
+HID10F		0509	0514	6	N	Count of Grade 10 dropouts - Hispanic - female.
+HID10U		0515	0520	6	N	Count of Grade 10 dropouts - Hispanic - gender unknown.
+BLD10M		0521	0526	6	N	Count of Grade 10 dropouts - Black, not Hispanic - male.
+BLD10F		0527	0532	6	N	Count of Grade 10 dropouts - Black, not Hispanic - female.
+BLD10U		0533	0538	6	N	Count of Grade 10 dropouts - Black, not Hispanic - gender unknown.
+WHD10M		0539	0544	6	N	Count of Grade 10 dropouts - White, not Hispanic - male.
+WHD10F		0545	0550	6	N	Count of Grade 10 dropouts - White, not Hispanic - female.
+WHD10U		0551	0556	6	N	Count of Grade 10 dropouts - White, not Hispanic - gender unknown.
+TOTD11		0557	0562	6	N	Count of Grade 11 dropouts - Total.
+AMD11M		0563	0568	6	N	Count of Grade 11 dropouts - American Indian/Alaskan Native - male.
+AMD11F		0569	0574	6	N	Count of Grade 11 dropouts - American Indian/Alaskan Native - female.
+AMD11U		0575	0580	6	N	Count of Grade 11 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD11M		0581	0586	6	N	Count of Grade 11 dropouts - Asian/Pacific Islander - male.
+ASD11F		0587	0592	6	N	Count of Grade 11 dropouts - Asian/Pacific Islander - female.
+ASD11U		0593	0598	6	N	Count of Grade 11 dropouts - Asian/Pacific Islander - gender unknown.
+HID11M		0599	0604	6	N	Count of Grade 11 dropouts - Hispanic - male.
+HID11F		0605	0610	6	N	Count of Grade 11 dropouts - Hispanic - female.
+HID11U		0611	0616	6	N	Count of Grade 11 dropouts - Hispanic - gender unknown.
+BLD11M		0617	0622	6	N	Count of Grade 11 dropouts - Black, not Hispanic - male.
+BLD11F		0623	0628	6	N	Count of Grade 11 dropouts - Black, not Hispanic - female.
+BLD11U		0629	0634	6	N	Count of Grade 11 dropouts - Black, not Hispanic - gender unknown.
+WHD11M		0635	0640	6	N	Count of Grade 11 dropouts - White, not Hispanic - male.
+WHD11F		0641	0646	6	N	Count of Grade 11 dropouts - White, not Hispanic - female.
+WHD11U		0647	0652	6	N	Count of Grade 11 dropouts - White, not Hispanic - gender unknown.
+TOTD12		0653	0658	6	N	Count of Grade 12 dropouts - Total.
+AMD12M		0659	0664	6	N	Count of Grade 12 dropouts - American Indian/Alaskan Native - male.
+AMD12F		0665	0670	6	N	Count of Grade 12 dropouts - American Indian/Alaskan Native - female.
+AMD12U		0671	0676	6	N	Count of Grade 12 dropouts - American Indian/Alaskan Native - gender unknown.
+ASD12M		0677	0682	6	N	Count of Grade 12 dropouts - Asian/Pacific Islander - male.
+ASD12F		0683	0688	6	N	Count of Grade 12 dropouts - Asian/Pacific Islander - female.
+ASD12U		0689	0694	6	N	Count of Grade 12 dropouts - Asian/Pacific Islander - gender unknown.
+HID12M		0695	0700	6	N	Count of Grade 12 dropouts - Hispanic - male.
+HID12F		0701	0706	6	N	Count of Grade 12 dropouts - Hispanic - female.
+HID12U		0707	0712	6	N	Count of Grade 12 dropouts - Hispanic - gender unknown.
+BLD12M		0713	0718	6	N	Count of Grade 12 dropouts - Black, not Hispanic - male.
+BLD12F		0719	0724	6	N	Count of Grade 12 dropouts - Black, not Hispanic - female.
+BLD12U		0725	0730	6	N	Count of Grade 12 dropouts - Black, not Hispanic - gender unknown.
+WHD12M		0731	0736	6	N	Count of Grade 12 dropouts - White, not Hispanic - male.
+WHD12F		0737	0742	6	N	Count of Grade 12 dropouts - White, not Hispanic - female.
+WHD12U		0743	0748	6	N	Count of Grade 12 dropouts - White, not Hispanic - gender unknown.
+TOTD712		0749	0754	6	N	Count of Grade 7 through 12 dropouts (calculated by summing the reported totals for those grades)
+TOTD912		0755	0760	6	N	Count of Grade 9 through 12 dropouts (calculated by summing the reported totals for those grades)
+TOTDAM		0761	0766	6	N	Count of American Indian/Alaskan Native 9-12 dropouts (calculated by summing the reported male, female, gender unknown totals for this race category)
+TOTDAS		0767	0772	6	N	Count of Asian/Pacific Islander 9-12 dropouts (calculated by summing the reported male, female, gender unknown totals for this race category)
+TOTDHI		0773	0778	6	N	Count of Hispanic 9-12 dropouts (calculated by summing the reported male, female, gender unknown totals for this race category)
+TOTDBL		0779	0784	6	N	Count of Black, not Hispanic 9-12 dropouts (calculated by summing the reported male, female, gender unknown totals for this race category)
+TOTDWH		0785	0790	6	N	Count of White, not Hispanic 9-12 dropouts (calculated by summing the reported male, female, gender unknown totals for this race category)
+TOTDM		0791	0796	6	N	Count of Male 9-12 dropouts (calculated by summing all reported race totals for this gender category)
+TOTDF		0797	0802	6	N	Count of Female 9-12 dropouts (calculated by summing all reported race totals for this gender category)
+TOTDU		0803	0808	6	N	Count of Gender Unknown 9-12 dropouts (calculated by summing all reported race totals for this gender category)
+DRP7		0809	0813	5*	N	Total 7th Grade Dropout Rate (see appendix D for computation procedures).
+DRP8		0814	0818	5*	N	Total 8th Grade Dropout Rate (see appendix D for computation procedures).
+DRP9		0819	0823	5*	N	Total 9th Grade Dropout Rate (see appendix D for computation procedures).
+DRP10		0824	0828	5*	N	Total 10th Grade Dropout Rate (see appendix D for computation procedures).
+DRP11		0829	0833	5*	N	Total 11th Grade Dropout Rate (see appendix D for computation procedures).
+DRP12		0834	0838	5*	N	Total 12th Grade Dropout Rate (see appendix D for computation procedures).
+DRP712		0839	0843	5*	N	Total 7-12th Grade Dropout Rate (see appendix D for computation procedures).
+DRP912		0844	0848	5*	N	Total 9-12th Grade Dropout Rate (see appendix D for computation procedures).
+DRPAM		0849	0853	5*	N	Total 9-12th Grade Dropout Rate - American Indian/Alaskan Native Dropout Rate (see Appendix C for computation procedures).
+DRPAS		0854	0858	5*	N	Total 9-12th Grade Dropout Rate - Asian/Pacific Islander Dropout Rate (see Appendix C for computation procedures).
+DRPHI		0859	0863	5*	N	Total 9-12th Grade Dropout Rate - Hispanic Dropout Rate (see Appendix C for computation procedures).
+DRPBL		0864	0868	5*	N	Total 9-12th Grade Dropout Rate - Black, not Hispanic Dropout Rate (see Appendix C for computation procedures).
+DRPWH		0869	0873	5*	N	Total 9-12th Grade Dropout Rate - White, not Hispanic Dropout Rate (see Appendix C for computation procedures).
+DRPM		0874	0878	5*	N	Total 9-12th Grade Dropout Rate - Male Dropout Rate (see Appendix C for computation procedures).
+DRPF		0879	0883	5*	N	Total 9-12th Grade Dropout Rate - Female Dropout Rate (see Appendix C for computation procedures).
+DRPU		0884	0888	5*	N	Total 9-12th Grade Dropout Rate - Gender Unknown Dropout Rate (see Appendix C for computation procedures).
+EBS7		0889	0894	6	N	Total 7th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS8		0895	0900	6	N	Total 8th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS9		0901	0906	6	N	Total 9th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS10		0907	0912	6	N	Total 10th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS11		0913	0918	6	N	Total 11th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS12		0919	0924	6	N	Total 12th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS712		0925	0930	6	N	Total 7-12th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBS912		0931	0936	6	N	Total 9-12th Grade Enrollment Base aggregated from the School Universe File (see appendix D for computation procedures).
+EBSAM		0937	0942	6	N	Total American Indian/Alaskan Native Enrollment Base aggregated from the School Universe File.
+EBSAS		0943	0948	6	N	Total Asian/Pacific Islander Enrollment Base aggregated from the School Universe File.
+EBSHI		0949	0954	6	N	Total Hispanic Enrollment Base aggregated from the School Universe File.
+EBSBL		0955	0960	6	N	Total Black, not Hispanic Enrollment Base aggregated from the School Universe File.
+EBSWH		0961	0966	6	N	Total White, not Hispanic Enrollment Base aggregated from the School Universe File.
+EBSM		0967	0972	6	N	Total Male Enrollment Base aggregated from the School Universe File.
+EBSF		0973	0978	6	N	Total Female Enrollment Base aggregated from the School Universe File.
+EBSU		0979	0984	6	N	Total Gender Unknown Enrollment Base aggregated from the School Universe File.
+DROPDEF		0985	0985	1	AN	Code indicating CCD Dropout Definition conformance type:  A  = The reported dropout data is based upon an alternative reporting calendar  C  = The reported dropout data conforms to all components of the CCD Dropout Definition
+ITOTDO07	0986	0986	1	AN	If this field contains anything other than "R", the Total Grade 7 Dropouts count originally submitted was adjusted.
+ITOTDO08	0987	0987	1	AN	If this field contains anything other than "R", the Total Grade 8 Dropouts count originally submitted was adjusted.
+ITOTDO09	0988	0988	1	AN	If this field contains anything other than "R", the Total Grade 9 Dropouts count originally submitted was adjusted.
+ITOTDO10	0989	0989	1	AN	If this field contains anything other than "R", the Total Grade 10 Dropouts count originally submitted was adjusted.
+ITOTDO11	0990	0990	1	AN	If this field contains anything other than "R", the Total Grade 11 Dropouts count originally submitted was adjusted.
+ITOTDO12	0991	0991	1	AN	If this field contains anything other than "R", the Total Grade 12 Dropouts count originally submitted was adjusted.
+TOTDPL	0992	0997	6	N	Total Diploma Recipients.
+AMDPLM	0998	1003	6	N	Diploma Recipients - Amer. Indian/Alaskan Native - male.                   
+AMDPLF	1004	1009	6	N	Diploma Recipients - Amer. Indian/Alaskan Native - female.                     
+AMDPLU	1010	1015	6	N	Diploma Recipients - Amer. Indian/Alaskan Native - gender unknown.             
+ASDPLM	1016	1021	6	N	Diploma Recipients - Asian/Pacific Islander - male.                            
+ASDPLF	1022	1027	6	N	Diploma Recipients - Asian/Pacific Islander - female.                          
+ASDPLU	1028	1033	6	N	Diploma Recipients - Asian/Pacific Islander - gender unknown.                  
+HIDPLM	1034	1039	6	N	Diploma Recipients - Hispanic - male.                                          
+HIDPLF	1040	1045	6	N	Diploma Recipients - Hispanic - female.                                        
+HIDPLU	1046	1051	6	N	Diploma Recipients - Hispanic - gender unknown.                                
+BLDPLM	1052	1057	6	N	Diploma Recipients - Black, not Hispanic - male.                               
+BLDPLF	1058	1063	6	N	Diploma Recipients - Black, not Hispanic - female.                             
+BLDPLU	1064	1069	6	N	Diploma Recipients - Black, not Hispanic - gender unknown.                     
+WHDPLM	1070	1075	6	N	Diploma Recipients - White, not Hispanic - male.                               
+WHDPLF	1076	1081	6	N	Diploma Recipients - White, not Hispanic - female.                             
+WHDPLU	1082	1087	6	N	Diploma Recipients - White, not Hispanic - gender unknown.                     
+TOTOHC	1088	1093	6	N	Total Other High School Completers.
+AMOHCM	1094	1099	6	N	Other High School Completers - Amer. Indian/Alaskan Native - male.                     
+AMOHCF	1100	1005	6	N	Other High School Completers - Amer. Indian/Alaskan Native - female.                   
+AMOHCU	1106	1111	6	N	Other High School Completers - Amer. Indian/Alaskan Native - gender unknown.           
+ASOHCM	1112	1117	6	N	Other High School Completers - Asian/Pacific Islander - male.                          
+ASOHCF	1118	1123	6	N	Other High School Completers - Asian/Pacific Islander - female.                        
+ASOHCU	1124	1129	6	N	Other High School Completers - Asian/Pacific Islander - gender unknown.                
+HIOHCM	1130	1135	6	N	Other High School Completers - Hispanic - male.                                        
+HIOHCF	1136	1141	6	N	Other High School Completers - Hispanic - female.                                      
+HIOHCU	1142	1147	6	N	Other High School Completers - Hispanic - gender unknown.                              
+BLOHCM	1148	1153	6	N	Other High School Completers - Black, not Hispanic - male.                             
+BLOHCF	1154	1159	6	N	Other High School Completers - Black, not Hispanic - female.                           
+BLOHCU	1160	1165	6	N	Other High School Completers - Black, not Hispanic - gender unknown.                   
+WHOHCM	1166	1171	6	N	Other High School Completers - White, not Hispanic - male.                             
+WHOHCF	1172	1177	6	N	Other High School Completers - White, not Hispanic - female.                           
+WHOHCU	1178	1183	6	N	Other High School Completers - White, not Hispanic - gender unknown.                   
+TOTCOM	1184	1189	6	N	Total Completers:  The sum of the fields TOTDPL and TOTOHC.
+AMCOMM	1190	1195	6	N	Total Completers - Amer. Indian/Alaskan Native - male:  The sum of the fields AMDPLM and AMOHCM.                  
+AMCOMF	1196	1201	6	N	Total Completers - Amer. Indian/Alaskan Native - female:  The sum of the fields AMDPLF and AMOHCF. 
+AMCOMU	1202	1207	6	N	Total Completers - Amer. Indian/Alaskan Native - gender unknown:  The sum of the fields AMDPLU and AMOHCU. 
+ASCOMM	1208	1213	6	N	Total Completers - Asian/Pacific Islander - male:  The sum of the fields ASDPLM and ASOHCM.                
+ASCOMF	1214	1219	6	N	Total Completers - Asian/Pacific Islander - female:  The sum of the fields ASDPLF and ASOHCF.           
+ASCOMU	1220	1225	6	N	Total Completers - Asian/Pacific Islander - gender unknown:  The sum of the fields ASDPLU and ASOHCU.           
+HICOMM	1226	1231	6	N	Total Completers - Hispanic - male:  The sum of the fields HIDPLM and HIOHCM. 
+HICOMF	1232	1237	6	N	Total Completers - Hispanic - female:  The sum of the fields HIDPLF and HIOHCF. 
+HICOMU	1238	1243	6	N	Total Completers - Hispanic - gender unknown:  The sum of the fields HIDPLU and HIOHCU. 
+BLCOMM	1244	1249	6	N	Total Completers - Black, not Hispanic - male:  The sum of the fields BLDPLM and BLOHCM. 
+BLCOMF	1250	1255	6	N	Total Completers - Black, not Hispanic - female:  The sum of the fields BLDPLF and BLOHCF. 
+BLCOMU	1256	1261	6	N	Total Completers - Black, not Hispanic - gender unknown:  The sum of the fields BLDPLU and BLOHCU. 
+WHCOMM	1262	1267	6	N	Total Completers - White, not Hispanic - male:  The sum of the fields WHDPLM and WHOHCM. 
+WHCOMF	1268	1273	6	N	Total Completers - White, not Hispanic - female:  The sum of the fields WHDPLF and WHOHCF. 
+WHCOMU	1274	1279	6	N	Total Completers - White, not Hispanic - gender unknown:  The sum of the fields WHDPLU and WHOHCU. 
+TDPLAM	1280	1285	6	N	Total Diploma Recipients - Amer. Indian/Alaskan Native:  The sum of the fields AMDPLM, AMOHCF and AMOHCU.
+TDPLAS	1286	1291	6	N	Total Diploma Recipients - Asian/Pacific Islander:  The sum of the fields ASDPLM, ASOHCF and ASOHCU.
+TDPLHI	1292	1297	6	N	Total Diploma Recipients - Hispanic:  The sum of the fields HIDPLM, HIOHCF and HIOHCU.
+TDPLBL	1298	1303	6	N	Total Diploma Recipients - Black, not Hispanic:  The sum of the fields BLDPLM, BLOHCF and BLOHCU.
+TDPLWH	1304	1309	6	N	Total Diploma Recipients - White, not Hispanic:  The sum of the fields WHDPLM, WHOHCF and WHOHCU.
+TOHCAM	1310	1315	6	N	Total Other High School Completers - Amer. Indian/Alaskan Native:  The sum of the fields AMOHCM, AMOHCF and AMOHCU.
+TOHCAS	1316	1321	6	N	Total Other High School Completers - Asian/Pacific Islander:  The sum of the fields ASOHCM, ASOHCF and ASOHCU.
+TOHCHI	1322	1327	6	N	Total Other High School Completers - Hispanic:  The sum of the fields HIOHCM, HIOHCF and HIOHCU.
+TOHCBL	1328	1333	6	N	Total Other High School Completers - Black, not Hispanic:  The sum of the fields BLOHCM, BLOHCF and BLOHCU.
+TOHCWH	1334	1339	6	N	Total Other High School Completers - White, not Hispanic:  The sum of the fields WHOHCM, WHOHCF and WHOHCU.
+TCOMAM	1340	1345	6	N	Total Completers - Amer. Indian/Alaskan Native:  The sum of the fields AMCOMM, AMCOMF and AMCOMF. 
+TCOMAS	1346	1351	6	N	Total Completers - Asian/Pacific Islander:  The sum of the fields ASCOMM, ASCOMF and ASCOMF.
+TCOMHI	1352	1357	6	N	Total Completers - Hispanic:  The sum of the fields HICOMM, HICOMF and HICOMF.
+TCOMBL	1358	1363	6	N	Total Completers - Black, not Hispanic:  The sum of the fields BLCOMM, BLCOMF and BLCOMF.
+TCOMWH	1364	1369	6	N	Total Completers - White, not Hispanic:  The sum of the fields WHCOMM, WHCOMF and WHCOMF.
+TDPLM	1370	1375	6	N	Total Diploma Recipients - male:  The sum of the fields AMDPLM, ASDPLM, HIDPLM, BLDPLM, and WHDPLM.
+TDPLF	1376	1381	6	N	Total Diploma Recipients - female:  The sum of the fields AMDPLF, ASDPLF, HIDPLF, BLDPLF, and WHDPLF.
+TDPLU	1382	1387	6	N	Total Diploma Recipients - gender unknown:  The sum of the fields AMDPLU, ASDPLU, HIDPLU, BLDPLU, and WHDPLU.
+TOHCM	1388	1393	6	N	Total Other High School Completers - male:  The sum of the fields AMOHCM, ASOHCM, HIOHCM, BLOHCM, and WHOHCM.
+TOHCF	1394	1399	6	N	Total Other High School Completers - female:  The sum of the fields AMOHCF, ASOHCF, HIOHCF, BLOHCF, and WHOHCF.
+TOHCU	1400	1405	6	N	Total Other High School Completers - gender unknown:  The sum of the fields AMOHCU, ASOHCU, HIOHCU, BLOHCU, and WHOHCU.
+TCOMM	1406	1411	6	N	Total Completers - male:  The sum of the fields AMCOMM, ASCOMM, HICOMM, BLCOMM, WHCOMM. 
+TCOMF	1412	1417	6	N	Total Completers - female:  The sum of the fields AMCOMF, ASCOMF, HICOMF, BLCOMF, WHCOMF. 
+TCOMU	1418	1423	6	N	Total Completers - gender unknown:  The sum of the fields AMCOMU, ASCOMU, HICOMU, BLCOMU, WHCOMU. 
+ITOTDPL	1424	1424	1	AN	If this field contains anything other than "R", the Diploma Recipient count originally submitted was adjusted.
+ITOTOHC	1425	1425	1	AN	If this field contains anything other than "R", the Other High School Completers count originally submitted was adjusted.
+CBS	1426	1431	6	N	Total Completion Rate Base (see Appendix C for computation procedures).
+CBSAM	1432	1437	6	N	Amer. Indian/Alaskan Native Completion Rate Base (see Appendix C for computation procedures).
+CBSAS	1438	1443	6	N	Asian/Pacific Islander Completion Rate Base (see Appendix C for computation procedures).
+CBSHI	1444	1449	6	N	Hispanic Completion Rate Base (see Appendix C for computation procedures).
+CBSBL	1450	1455	6	N	Black, not Hispanic Completion Rate Base (see Appendix C for computation procedures).
+CBSWH	1456	1461	6	N	White, not Hispanic Completion Rate Base (see Appendix C for computation procedures).
+CBSM	1462	1467	6	N	Male Completion Rate Base (see Appendix C for computation procedures).
+CBSF	1468	1473	6	N	Female Completion Rate Base (see Appendix C for computation procedures).
+CBSU	1474	1479	6	N	Gender unknown Completion Rate Base (see Appendix C for computation procedures).
+TCOMR	1480	1484	5*	N	Total Completion Rate (see Appendix C for computation procedures).
+TCOMAMR	1485	1489	5*	N	Amer. Indian/Alaskan Native Completion Rate (see Appendix C for computation procedures).
+TCOMASR	1490	1494	5*	N	Asian/Pacific Islander Completion Rate (see Appendix C for computation procedures).
+TCOMHIR	1495	1499	5*	N	Hispanic Completion Rate (see Appendix C for computation procedures).
+TCOMBLR	1500	1504	5*	N	Black, not Hispanic Completion Rate (see Appendix C for computation procedures).
+TCOMWHR	1505	1509	5*	N	White, not Hispanic Completion Rate (see Appendix C for computation procedures).
+TCOMMR	1510	1514	5*	N	Male Completion Rate (see Appendix C for computation procedures).
+TCOMFR	1515	1519	5*	N	Female Completion Rate (see Appendix C for computation procedures).
+TCOMUR	1520	1524	5*	N	Gender unknown Completion Rate (see Appendix C for computation procedures).
+TDPLR	1525	1529	5*	N	Diploma Recipient Completion Rate (see Appendix C for computation procedures).
+TDPLAMR	1530	1534	5*	N	Total Diploma Recipients Rate - Amer. Indian/Alaskan Native (see Appendix C for computation procedures). 
+TDPLASR	1535	1539	5*	N	Total Diploma Recipients Rate - Asian/Pacific Islander (see Appendix C for computation procedures). 
+TDPLHIR	1540	1544	5*	N	Total Diploma Recipients Rate - Hispanic (see Appendix C for computation procedures). 
+TDPLBLR	1545	1549	5*	N	Total Diploma Recipients Rate - Black, not Hispanic (see Appendix C for computation procedures). 
+TDPLWHR	1550	1554	5*	N	Total Diploma Recipients Rate - White, not Hispanic (see Appendix C for computation procedures). 
+TDPLMR	1555	1559	5*	N	Total Diploma Recipients Rate - male (see Appendix C for computation procedures). 
+TDPLFR	1560	1564	5*	N	Total Diploma Recipients Rate - female (see Appendix C for computation procedures). 
+TDPLUR	1565	1569	5*	N	Total Diploma Recipients Rate - gender unknown (see Appendix C for computation procedures). 
+TOHCR	1570	1574	5*	N	Other High School Completion Rate (see Appendix C for computation procedures).
+TOHCAMR	1575	1579	5*	N	Total Other High School Completers Rate - Amer. Indian/Alaskan Native (see Appendix C for computation procedures). 
+TOHCASR	1580	1584	5*	N	Total Other High School Completers Rate - Asian/Pacific Islander (see Appendix C for computation procedures). 
+TOHCHIR	1585	1589	5*	N	Total Other High School Completers Rate - Hispanic (see Appendix C for computation procedures). 
+TOHCBLR	1590	1594	5*	N	Total Other High School Completers Rate - Black, not Hispanic (see Appendix C for computation procedures). 
+TOHCWHR	1595	1599	5*	N	Total Other High School Completers Rate - White, not Hispanic (see Appendix C for computation procedures). 
+TOHCMR	1600	1604	5*	N	Total Other High School Completers Rate - male (see Appendix C for computation procedures). 
+TOHCFR	1605	1609	5*	N	Total Other High School Completers Rate - female (see Appendix C for computation procedures). 
+TOHCUR	1610	1614	5*	N	Total Other High School Completers Rate - gender unknown (see Appendix C for computation procedures). 
+SCBS	1615	1620	6	N	Total State-level Completion Rate Base (see Appendix C for computation procedures).
+SCBSAM	1621	1626	6	N	Total State-level Completion Rate Base - Amer. Indian/Alaskan Native (see Appendix C for computation procedures).
+SCBSAS	1627	1632	6	N	Total State-level Completion Rate Base - Asian/Pacific Islander (see Appendix C for computation procedures).
+SCBSHI	1633	1638	6	N	Total State-level Completion Rate Base - Hispanic (see Appendix C for computation procedures).
+SCBSBL	1639	1644	6	N	Total State-level Completion Rate Base - Black, not Hispanic (see Appendix C for computation procedures).
+SCBSWH	1645	1650	6	N	Total State-level Completion Rate Base - White, not Hispanic (see Appendix C for computation procedures).
+SCBSM	1651	1656	6	N	Total State-level Completion Rate Base - Male (see Appendix C for computation procedures).
+SCBSF	1657	1662	6	N	Total State-level Completion Rate Base - Female (see Appendix C for computation procedures).
+SCBSU 	1663	1668	6	N 	Total State-level Completion Rate Base - Gender unknown (see Appendix C for computation procedures).
+BOUND	1669	1669	1	AN	The boundary change indicator is a classification of changes in an education agency's boundaries since the last report to NCES.  The options are: 1 = No change since last report. 2 = Education agency has closed with no effect on another agency’s boundaries, but was open with dropout counts in one of the three previous years. 3 = This is a new education agency formed with no effect on another agency's boundaries. 4 = Agency was in existence, but not reported on previous year's CCD agency universe, and is now being added. 5 = Agency has undergone a significant change in geographical boundaries or instructional responsibility.
+
+

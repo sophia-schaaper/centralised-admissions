@@ -1,0 +1,289 @@
+Common Core of Data, Local Education Agency Universe Survey, 1999-2000
+
+FILE NAME = ag991a.dat, 1999-2000
+
+NVAR = 142
+
+NOBS = 16928
+
+LRECL = 722
+
+(*) Fields have one explicit decimal place
+
+(+) Fields represent sub-fields of the fields immediately preceding them.
+
+The file contains data for the school year 1999-2000 sorted by the NCES assigned local education agency identification code (LEAID).
+
+Variable    Start   End     Field   Data
+Name        Pos.    Pos.    Length  Type    Description
+
+LEAID       0001    0007    7       AN      NCES Local Education Agency ID.  The first two positions of this field is also the FIPS                                             
+                                            state code.
+   +FIPST   0001    0002    2       AN      Federal Information Processing Standards, FIPS state code.
+STID99      0008    0021    14      AN      State's own ID for the education agency.
+NAME99      0022    0081    60      AN      Name of the education agency.
+PHONE99     0082    0091    10      AN      Telephone number of education agency.  NOTE: Position # 0082-0084 is the area code, and                                             
+                                            position # 0085-0091 is the exchange and number.
+MSTREE99    0092    0121    30      AN      Mailing address of the agency -- may be a street address, a Post Office box number, or, if                                          
+                                            there is no address beyond CITY, STATE, and ZIP, the character "N".
+MCITY99     0122    0151    30      AN      Name of the mailing address city.
+MSTATE99    0152    0153    2       AN      Two-letter U.S. Postal Service abbreviation for the state where the mailing address is                                              
+                                            located.
+MZIP99      0154    0158    5       AN      Five-digit U.S. Postal Service ZIP code for the mailing address.
+MZIP499     0159    0162    4       AN      Four-digit ZIP+4, if assigned; if none, field is blank.
+LSTREE99    0163    0192    30      AN      Location Address.
+LCITY99     0193    0222    30      AN      Location City.
+LSTATE99    0223    0224    2       AN      Location State (PO abbreviation.
+LZIP99      0225    0229    5       AN      Location 5 digit ZIP Code.
+LZIP499     0230    0233    4       AN      Location +4 ZIP Code.
+TYPE99      0234    0234    1       AN      NCES code for type of agency:
+                                            1 = Local school district that is not a component of a supervisory union.
+                                            2 = Local school district component of a supervisory union sharing a superintendent and                                             
+                                            administrative services with other local school districts.
+                                            3 = Supervisory union administrative center, or a county superintendent serving the same                                            
+                                            purpose.
+                                            4 = Regional education services agency, or a county superintendent serving the same                                                 
+                                            purpose.
+                                            5 = State-operated institution charged, at least in part, with providing elementary and/or                                          
+                                            secondary instruction or services to a special need population.
+                                            6 = Federally-operated institution charged, at least in part, with providing elementary                                             
+                                            and/or secondary instruction or services to a special need population.
+                                            7 = Other education agencies that do not fit into the first six categories.
+UNION99     0235    0237    3       AN      Supervisory Union Number.  For supervisory union administrative centers and component                                               
+                                            agencies, this is a number assigned by the state to the union.  Additionally, if the agency                                             
+                                            is a county superintendent, this is the FIPS county number.  If no number was reported, the                                             
+                                            field will contain "000".
+CONUM99     0238    0242    5       AN      FIPS county number.
+                                            NOTE: Position #0268-0269 is the FIPS state number, and position #0270-0271 is the FIPS                                             
+                                            number for county within state.
+CONAME99    0243    0272    30      AN      Name of county.
+CMSA99      0273    0278    6       AN      Unique numeric code assigned by U.S.  Office of Management and Budget which identifies a                                            
+                                            geographic area consisting of a large population nucleus and social integration with that                                           
+                                            nucleus.  If the agency is not located within one of these areas, the field will contain                                            
+                                            "000000".
+                                            CMSA = Consolidated Metropolitan Statistical Area
+                                            PMSA = Primary Metropolitan Statistical Area
+                                            MSA  = Metropolitan Statistical Area
+MSC99       0279    0279    1       AN      NCES classification of the agency's service area relative to a Metropolitan Statistical                                             
+                                            Area.
+                                            1 = Primarily serves a central city of an MSA
+                                            2 = Serves an MSA but not primarily its central city
+                                            3 = Does not serve an MSA
+BOUND99     0280    0280    1       AN      The boundary change indicator is a classification of changes in an education agency's                                               
+                                            boundaries since the last report to NCES.  The options are:
+                                            1 = No change since last report.
+                                            2 = Education agency has closed with no effect on another agency's boundaries.
+                                            3 = This is a new education agency formed with no effect on another agency's boundaries.
+                                            4 = Agency was in existence, but not reported on previous year's CCD agency universe, and                                           
+                                            is now being added.
+                                            5 = Agency has undergone a significant change in geographical boundaries or instructional                                           
+                                            responsibility.
+GSLO99      0281    0282    2       AN      Agency low grade offered.  If grade span data was not reported, this field was calculated                                           
+                                            from the low grade spans of the associated schools on the CCD School Universe file.
+GSHI99      0283    0284    2       AN      Agency high grade offered.  If grade span data was not reported, this field was calculated                                          
+                                            from the high grade spans of the associated schools on the CCD School Universe file. GSLO99                                             
+                                            and GSHI99 add up to the Grade Span of the school.
+SCH99       0285    0289    5       N       Aggregate number of schools associated with this agency on the CCD Public School file.
+TEACH99     0290    0296    7*      N       Aggregate FTE classroom teachers reported for schools associated with this agency on the                                            
+                                            CCD Public School file, reported to the nearest tenth; field includes one explicit decimal.  
+                                            This is NOT necessarily the total number of teachers employed by this agency.
+UG99        0297    0303    7       N       Total students in classes or programs without standard grade designations.
+PK1299      0304    0310    7       N       Total students in classes from prekindergarten through 12th grade that are part of the                                              
+                                            public school program.                                          
+MEMBER99    0311    0317    7       N       Calculated total student membership of the Local Education Agency: The Sum of the fields                                            
+                                            UG99 and PK1299.
+MIGRNT99    0318    0324    7       N       The number of migrant students, as defined under 34 CFR 200.40, enrolled in summer programs                                             
+                                            during the summer immediately prior to the 1999-2000 school year.
+SPECED99    0325    0331    7       N       Count of all students having a written Individual Education Program (IEP) under IDEA - Part                                             
+                                            B.
+LEP99       0332    0338    7       N       The number of Limited-English Proficient students served in appropriate programs.
+PKTCH99     0339    0345    7*      N       Prekindergarten Teachers. Full-time equivalency reported to the nearest tenth; field                                                
+                                            includes one explicit decimal.
+KGTCH99     0346    0352    7*      N       Kindergarten Teachers. Full-time equivalency reported to the nearest tenth; field includes                                          
+                                            one explicit decimal.
+ELMTCH99    0353    0359    7*      N       Elementary Teachers. Full-time equivalency reported to the nearest tenth; field includes                                            
+                                            one explicit decimal.
+SECTCH99    0360    0366    7*      N       Secondary Teachers. Full-time equivalency reported to the nearest tenth; field includes one                                             
+                                            explicit decimal.
+UGTCH99     0367    0373    7*      N       Teachers of classes or programs to which students are assigned without standard grade                                               
+                                            designation. Full-time equivalency reported to the nearest tenth; field includes one 
+                                            explicit decimal.
+TOTTCH99    0374    0380    7*      N       Total Teachers. Full-time equivalency reported to the nearest tenth; field includes one                                             
+                                            explicit decimal.
+AIDES99     0381    0387    7*      N       Instructional Aides. Full-time equivalency reported to the nearest tenth; field includes                                            
+                                            one explicit decimal.
+CORSUP99    0388    0394    7*      N       Instructional Coordinators & Supervisors. Full-time equivalency reported to the nearest                                             
+                                            tenth; includes one explicit decimal.
+ELMGUI99    0395    0401    7*      N       Elementary Guidance Counselors. Full-time equivalency reported to the nearest tenth;                                                
+                                            includes one explicit decimal.
+SECGUI99    0402    0408    7*      N       Secondary Guidance Counselors. Full-time equivalency reported to the nearest tenth; field                                           
+                                            includes one explicit decimal.
+TOTGUI99    0409    0415    7*      N       Total Guidance Counselors. Full-time equivalency reported to the nearest tenth; field                                               
+                                            includes one explicit decimal.
+LIBSPE99    0416    0422    7*      N       Librarians/Media Specialists. Full-time equivalency reported to the nearest tenth; field                                            
+                                            includes one explicit decimal.
+LIBSUP99    0423    0429    7*      N       Library/Media Support Staff. Full-time equivalency reported to the nearest tenth; field                                             
+                                            includes one explicit decimal.
+LEAADM99    0430    0436    7*      N       LEA Administrators. Full-time equivalency reported to the nearest tenth; field includes one                                             
+                                            explicit decimal.
+LEASUP99    0437    0443    7*      N       LEA Administrative Support Staff. Full-time equivalency reported to the nearest tenth;                                              
+                                            field includes one explicit decimal.
+SCHADM99    0444    0450    7*      N       School Administrators. Full-time equivalency reported to the nearest tenth; field includes                                          
+                                            one explicit decimal.
+SCHSUP99    0451    0457    7*      N       School Administrative Support Staff. Full-time equivalency reported to the nearest tenth;                                           
+                                            field includes one explicit decimal.
+STUSUP99    0458    0464    7*      N       Student Support Services Staff. Full-time equivalency reported to the nearest tenth; field                                          
+                                            includes one explicit decimal.
+OTHSUP99    0465    0471    7*      N       All Other Support Services Staff. Full-time equivalency reported to the nearest tenth;                                              
+                                            field includes one explicit decimal.
+TOTDPL99    0472    0477    6       N       Total Diploma Recipients.  Includes both regular and other diploma recipients, comparable                                           
+                                            to adding REGDIP and OTHDIP from previous year's agency file.
+AMDPLM99    0478    0483    6       N       Diploma Recipients - Amer. Indian/Alaskan Native - male.
+AMDPLF99    0484    0489    6       N       Diploma Recipients - Amer. Indian/Alaskan Native - female.
+AMDPLU99    0490    0495    6       N       Diploma Recipients - Amer. Indian/Alaskan Native - gender unknown.
+ASDPLM99    0496    0501    6       N       Diploma Recipients - Asian/Pacific Islander - male.
+ASDPLF99    0502    0507    6       N       Diploma Recipients - Asian/Pacific Islander - female.
+ASDPLU99    0508    0513    6       N       Diploma Recipients - Asian/Pacific Islander - gender unknown.
+HIDPLM99    0514    0519    6       N       Diploma Recipients - Hispanic - male.
+HIDPLF99    0520    0525    6       N       Diploma Recipients - Hispanic - female.
+HIDPLU99    0526    0531    6       N       Diploma Recipients - Hispanic - gender unknown.
+BLDPLM99    0532    0537    6       N       Diploma Recipients - Black, not Hispanic - male.
+BLDPLF99    0538    0543    6       N       Diploma Recipients - Black, not Hispanic - female.
+BLDPLU99    0544    0549    6       N       Diploma Recipients - Black, not Hispanic - gender unknown.
+WHDPLM99    0550    0555    6       N       Diploma Recipients - White, not Hispanic - male.
+WHDPLF99    0556    0561    6       N       Diploma Recipients - White, not Hispanic - female.
+WHDPLU99    0562    0567    6       N       Diploma Recipients - White, not Hispanic - gender unknown.
+TOTOHC99    0568    0573    6       N       Total Other High School Completers.  Comparable to OTHCOM from previous year's agency file.
+AMOHCM99    0574    0579    6       N       Other High School Completers - Amer. Indian/Alaskan Native - male.
+AMOHCF99    0580    0585    6       N       Other High School Completers - Amer. Indian/Alaskan Native - female.
+AMOHCU99    0586    0591    6       N       Other High School Completers - Amer. Indian/Alaskan Native - gender unknown.
+ASOHCM98    0592    0597    6       N       Other High School Completers - Asian/Pacific Islander - male.
+ASOHCF99    0598    0603    6       N       Other High School Completers - Asian/Pacific Islander - female.
+ASOHCU99    0604    0609    6       N       Other High School Completers - Asian/Pacific Islander - gender unknown.
+HIOHCM99    0610    0615    6       N       Other High School Completers - Hispanic - male.
+HIOHCF99    0616    0621    6       N       Other High School Completers - Hispanic - female.
+HIOHCU99    0622    0627    6       N       Other High School Completers - Hispanic - gender unknown.
+BLOHCM99    0628    0633    6       N       Other High School Completers - Black, not Hispanic - male.
+BLOHCF99    0634    0639    6       N       Other High School Completers - Black, not Hispanic - female.
+BLOHCU99    0640    0645    6       N       Other High School Completers - Black, not Hispanic - gender unknown.
+WHOHCM99    0646    0651    6       N       Other High School Completers - White, not Hispanic - male.
+WHOHCF99    0652    0657    6       N       Other High School Completers - White, not Hispanic - female.
+WHOHCU99    0658    0663    6       N       Other High School Completers - White, not Hispanic - gender unknown.
+ISCH99      0664    0664    1       AN      If this field contains anything other than "T", the aggregate number of schools associated                                          
+                                            with this agency on the school universe file was adjusted.
+ITEACH99    0665    0665    1       AN      If this field contains anything other than "T", the aggregate FTE classroom teacher count                                           
+                                            reported for schools associated with this agency on the school universe file was adjusted.
+IUG99       0666    0666    1       AN      If this field contains anything other than "R", the Ungraded Student count originally                                               
+                                            submitted was adjusted.
+IPK1299     0667    0667    1       AN      If this field contains anything other than "R", the PK through 12 Student count originally                                          
+                                            submitted was adjusted.
+IMEMB99     0668    0668    1       AN      If this field contains anything other than "T", the Total Student count (Ungraded + PK                                              
+                                            through 12) was adjusted.
+IMIGRN99    0669    0669    1       AN      If this field contains anything other than "R", the Migrant Student count originally                                                
+                                            submitted was adjusted.
+ISPEC99     0670    0670    1       AN      If this field contains anything other than "R", the Special Education - IEP count                                                   
+                                            originally submitted was adjusted.
+ILEP99      0671    0671    1       AN      If this field contains anything other than "R", the Limited-English-Proficient Student                                              
+                                            count originally submitted was adjusted.
+IPKTCH99    0672    0672    1       AN      If this field contains anything other than "R", the Prekindergarten Teacher count                                                   
+                                            originally submitted was adjusted.
+IKGTCH99    0673    0673    1       AN      If this field contains anything other than "R", the Kindergarten Teacher count originally                                           
+                                            submitted was adjusted.
+IELTCH99    0674    0674    1       AN      If this field contains anything other than "R", the Elementary Teacher count originally                                             
+                                            submitted was adjusted.
+ISETCH99    0675    0675    1       AN      If this field contains anything other than "R", the Secondary Teacher count originally                                              
+                                            submitted was adjusted.
+IUGTCH99    0676    0676    1       AN      If this field contains anything other than "R", the Teachers of Ungraded Classes count                                              
+                                            originally submitted was adjusted.
+ITOTCH99    0677    0677    1       AN      If this field contains anything other than "R", the Total FTE Teacher count originally                                              
+                                            submitted was adjusted.
+IAIDES99    0678    0678    1       AN      If this field contains anything other than "R", the Instructional Aides count originally                                            
+                                            submitted was adjusted.
+ICOSUP99    0679    0679    1       AN      If this field contains anything other than "R", the Instructional Coordinators &                                                    
+                                            Supervisors count originally submitted was adjusted.
+IELGUI99    0680    0680    1       AN      If this field contains anything other than "R", the Elementary Guidance Counselors count                                            
+                                            originally submitted was adjusted.
+ISEGUI99    0681    0681    1       AN      If this field contains anything other than "R", the Secondary Guidance Counselors count                                             
+                                            originally submitted was adjusted.
+ITOGUI99    0682    0682    1       AN      If this field contains anything other than "R", the Total Guidance Counselors count                                                 
+                                            originally submitted was adjusted.
+ILISPE99    0683    0683    1       AN      If this field contains anything other than "R", the Librarians/Media Specialists count                                              
+                                            originally submitted was adjusted.
+ILISUP99    0684    0684    1       AN      If this field contains anything other than "R", the Library/Media Support Staff count                                               
+                                            originally submitted was adjusted.
+ILEADM99    0685    0685    1       AN      If this field contains anything other than "R", the LEA Administrators count originally                                             
+                                            submitted was adjusted.
+ILESUP99    0686    0686    1       AN      If this field contains anything other than "R", the LEA Administrative Support Staff count                                          
+                                            originally submitted was adjusted.
+ISCADM99    0687    0687    1       AN      If this field contains anything other than "R", the School Administrative Support Staff                                             
+                                            count originally submitted was adjusted.
+ISCSUP99    0688    0688    1       AN      If this field contains anything other than "R", the School Administrative Support Staff                                             
+                                            count originally submitted was adjusted.
+ISTSUP99    0689    0689    1       AN      If this field contains anything other than "R", the Student Support Services Staff count                                            
+                                            originally submitted was adjusted.
+IOTSUP99    0690    0690    1       AN      If this field contains anything other than "R", the All Other Support Services Staff count                                          
+                                            originally submitted was adjusted.
+ITDPL99     0691    0691    1       AN      If this field contains anything other than "R", the Total Diploma Recipients count                                                  
+                                            originally submitted was adjusted.
+IAMDPM99    0692    0692    1       AN      If this field contains anything other than "R", the Diploma Recipients - Amer.                                                      
+                                            Indian/Alaskan Native - male count originally submitted was adjusted.
+IAMDPF99    0693    0693    1       AN      If this field contains anything other than "R", the Diploma Recipients - Amer.                                                      
+                                            Indian/Alaskan Native - female count originally submitted was adjusted.
+IAMDPU99    0694    0694    1       AN      If this field contains anything other than "R", the Diploma Recipients - Amer.                                                      
+                                            Indian/Alaskan Native - gender unknown count originally submitted was adjusted.
+IASDPM99    0695    0695    1       AN      If this field contains anything other than "R", the Diploma Recipients - Asian/Pacific                                              
+                                            Islander - male count originally submitted was adjusted.
+IASDPF99    0696    0696    1       AN      If this field contains anything other than "R", the Diploma Recipients - Asian/Pacific                                              
+                                            Islander - female count originally submitted was adjusted.
+IASDPU99    0697    0697    1       AN      If this field contains anything other than "R", the Diploma Recipients - Asian/Pacific                                              
+                                            Islander - gender unknown count originally submitted was adjusted.
+IHIDPM99    0698    0698    1       AN      If this field contains anything other than "R", the Diploma Recipients - Hispanic - male                                            
+                                            count originally submitted was adjusted.
+IHIDPF99    0699    0699    1       AN      If this field contains anything other than "R", the Diploma Recipients - Hispanic - female                                          
+                                            count originally submitted was adjusted.
+IHIDPU99    0700    0700    1       AN      If this field contains anything other than "R", the Diploma Recipients - Hispanic - gender                                          
+                                            unknown count originally submitted was adjusted.
+IBLDPM99    0701    0701    1       AN      If this field contains anything other than "R", the Diploma Recipients - Black, not                                                 
+                                            Hispanic - male count originally submitted was adjusted.
+IBLDPF99    0702    0702    1       AN      If this field contains anything other than "R", the Diploma Recipients - Black, not                                                 
+                                            Hispanic - female count originally submitted was adjusted.
+IBLDPU99    0703    0703    1       AN      If this field contains anything other than "R", the Diploma Recipients - Black, not                                                 
+                                            Hispanic - gender unknown count originally submitted was adjusted.
+IWHDPM99    0704    0704    1       AN      If this field contains anything other than "R", the Diploma Recipients - White, not                                                 
+                                            Hispanic - male count originally submitted was adjusted.
+IWHDPF99    0705    0705    1       AN      If this field contains anything other than "R", the Diploma Recipients - White, not                                                 
+                                            Hispanic - female count originally submitted was adjusted.
+IWHDPU99    0706    0706    1       AN      If this field contains anything other than "R", the Diploma Recipients - White, not                                                 
+                                            Hispanic - gender unknown count originally submitted was adjusted.
+ITOHC99     0707    0707    1       AN      If this field contains anything other than "R", the Total Other High School Completers                                              
+                                            count originally submitted was adjusted.
+IAMOCM99    0708    0708    1       AN      If this field contains anything other than "R", the Other High School Completers - Amer.                                            
+                                            Indian/Alaskan Native - male count originally submitted was adjusted.
+IAMOCF99    0709    0709    1       AN      If this field contains anything other than "R", the Other High School Completers - Amer.                                            
+                                            Indian/Alaskan Native - female count originally submitted was adjusted.
+IAMOCU99    0710    0710    1       AN      If this field contains anything other than "R", the Other High School Completers - Amer.                                            
+                                            Indian/Alaskan Native - gender unknown count originally submitted was adjusted.
+IASOCM99    0711    0711    1       AN      If this field contains anything other than "R", the Other High School Completers -                                                  
+                                            Asian/Pacific Islander - male count originally submitted was adjusted.
+IASOCF99    0712    0712    1       AN      If this field contains anything other than "R", the Other High School Completers -                                                  
+                                            Asian/Pacific Islander - female count originally submitted was adjusted.
+IASOCU99    0713    0713    1       AN      If this field contains anything other than "R", the Other High School Completers -                                                  
+                                            Asian/Pacific Islander - gender unknown count originally submitted was adjusted.
+IHIOCM99    0714    0714    1       AN      If this field contains anything other than "R", the Other High School Completers - Hispanic                                             
+                                            - male count originally submitted was adjusted.
+IHIOCF99    0715    0715    1       AN      If this field contains anything other than "R", the Other High School Completers - Hispanic                                             
+                                            - female count originally submitted was adjusted.
+IHIOCU99    0716    0716    1       AN      If this field contains anything other than "R", the Other High School Completers - Hispanic                                             
+                                            - gender unknown count originally submitted was adjusted.
+IBLOCM99    0717    0717    1       AN      If this field contains anything other than "R", the Other High School Completers - Black,                                           
+                                            not Hispanic - male count originally submitted was adjusted.
+IBLOCF99    0718    0718    1       AN      If this field contains anything other than "R", the Other High School Completers - Black,                                           
+                                            not Hispanic - female count originally submitted was adjusted.
+IBLOCU99    0719    0719    1       AN      If this field contains anything other than "R", the Other High School Completers - Black,                                           
+                                            not Hispanic - gender unknown count originally submitted was adjusted.
+IWHOCM99    0720    0720    1       AN      If this field contains anything other than "R", the Other High School Completers - White,                                           
+                                            not Hispanic - male count originally submitted was adjusted.
+IWHOCF99    0721    0721    1       AN      If this field contains anything other than "R", the Other High School Completers - White,                                           
+                                            not Hispanic - female count originally submitted was adjusted.
+IWHOCU99    0722    0722    1       AN      If this field contains anything other than "R", the Other High School Completers - White,                                           
+                                            not Hispanic - gender unknown count originally submitted was adjusted.
